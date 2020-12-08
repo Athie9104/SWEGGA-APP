@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styling.css">
+
+<script src="challenge.js"></script>
+
+<title>ORDER</title>
+
+</head>
+
+<body>
+
+
+<div id="page">
+	<cont id="sidebar">
+		<img src="swegga.jpg" alt="">
+	</cont>
+	<cont2 id="banner">
+		<img src="delivery.gif" alt="" width="300" height="85">
+	</cont2>
+
+	<cont3 id="navigation">
+		<img src="links.gif" alt="" usemap="#image-map">
+
+		<map name="image-map">
+			<area title="" alt="" title="" href="" coords="97,32,12,5" shape="rect">
+			<area title="" alt="" title="" href="" coords="188,33,113,8" shape="rect">
+			<area title="" alt="" title="" href="" coords="290,37,202,6" shape="rect">
+			<area title="" alt="" title="" href="" coords="429,38,319,3" shape="rect">
+			<area title="" alt="" title="" href="" coords="547,37,454,5" shape="rect">
+		</map>
+	</cont3>
+
+	
+	<div id="main">
+		<h2>Product Summary</h2>
+		<table id="table">
+			<tr>
+				<th>Description</th>
+				<th>Size</th>
+				<th>Color</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Total</th>
+			</tr>
+
+			<tr>
+				<td><a href="#">Female ski Jackets</a></td>
+				<td><select name="" id="">
+					<option value="">Small</option>
+					<option value="">Medium</option>
+					<option value="">Large</option>
+
+				<td><select name="" id="">
+					<option value="">Red</option>
+					<option value="">Pink</option>
+					<option value="">Black</option>
+				</td>
+				<td type="Price1" id="price1" value="" maxlength="2" size="2">R 150.95</td>
+				<td><input type="text" id="quantity1"></td>
+				<td type="Total1" id="total1" maxlength="2" size="2"></td>
+			</tr>
+
+			<tr>
+				<td><a href="#">Male ski Jackets</a></td>
+				<td><select name="" id="">
+					<option value="">Small</option>
+					<option value="">Medium</option>
+					<option value="">Large</option>
+
+				<td><select name="" id="">
+					<option value="">Red</option>
+					<option value="">Blue</option>
+					<option value="">White</option>
+				</td>
+				<td type="Price2" id="price2" value="" maxlength="2" size="2">R 180.95</td>
+				<td><input type="text" id="quantity2"></td>
+				<td type="Total2" id="total2" maxlength="2" size="2"></td>
+			</tr>
+			<tr>
+				<td colspan="4">Click to confirm or process your order:</td>
+				<td><input type="button" onclick="calc()" value="Total price"></td>
+				<td type="GrandTotal" id="grandtotal" maxlength="2" size="2"></td>
+			</tr>
+		</table>
+
+	
+	</div>
+
+	<hr>
+	<p class="copyright">'© 2020 Swegga Fashion – ATHENKOSI GONGOTHA</p>
+</div>
+
+<!--I tried to do my script on a seperate file but it didn't work I took the same script and used it inline it worked perfectly-->
+<script>
+	function calc(){
+	//Calculate for female
+		// let pr1 = parseFloat(document.getElementById("price1").value);
+		let quan1= parseInt(document.getElementById("quantity1").value * 150.95);
+		let result1 = quan1;
+
+		document.getElementById("total1").innerHTML = result1.toFixed(2);
+
+
+	//Calcute for male
+		// let pr2 = parseFloat(document.getElementById("price2").value);
+		let quan2= parseInt(document.getElementById("quantity2").value * 180.95);
+		let result2 =  quan2;
+
+		document.getElementById("total2").innerHTML = result2.toFixed(2);
+
+	//Getting my grandtotal
+		let gt = result1 + result2;
+		document.getElementById("grandtotal").innerHTML = gt.toFixed(2);
+
+	}
+
+</script>
+
+</body>
+</html>

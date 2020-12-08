@@ -1,0 +1,76 @@
+/* Examination number */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	background-color: #4766B8;
+    margin: 0;
+	padding: 0; }
+
+#main{
+	margin-left: 150px;
+}
+
+#table{
+	border: 1px solid black;
+}
+
+#page {
+	width: 860px;
+	height:500px;
+	background-color: white;
+	margin: 10px auto;
+	border: 2px solid black;
+	padding: 10px; }
+	
+
+#banner {
+    margin-bottom: 1em;
+	height: 70px }
+
+#navigation {
+	height: 56px;
+	width: 560px;
+	margin-top: 1em;
+	height: 45px;
+	background-color: white; }
+	
+#sidebar {
+	width: 150px;
+	height: 350px;
+	background-color: white;
+	margin-bottom: .7em;
+	float: left; }
+
+h2{
+	color: blue;
+	text-align: center;
+}
+
+.copyright {
+    font-size: 90%;
+    text-align: right; 
+	margin: 0; }
+	
+/* the styles for the table*/
+
+caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 150%;
+	color: #4766B8; }
+
+td, th {
+	border: 1px solid black;
+	padding: .2em .7em;
+	font-size: 95%; }	
+	
+.alignRight {
+	text-align: right; }
+
+hr{
+	margin-top: 70px;
+	width: 850px;
+}
